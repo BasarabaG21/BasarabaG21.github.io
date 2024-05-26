@@ -23,6 +23,7 @@
             padding-top: 30px;
             min-height: 70px;
             border-bottom: #77aaff 3px solid;
+            text-align: center;
         }
         header a {
             color: #fff;
@@ -35,24 +36,22 @@
             list-style: none;
         }
         header li {
-            float: left;
             display: inline;
-            padding: 0 20px 0 20px;
+            padding: 0 20px;
         }
         header #branding {
-            float: left;
+            float: none;
         }
         header #branding h1 {
             margin: 0;
         }
         header nav {
-            float: right;
-            margin-top: 10px;
+            float: none;
         }
         .showcase {
             min-height: 400px;
             background: url('https://www.humblebundle.com/static/hashed/7372a9ae2069ad0dcf77bbd7b88b837dff24c2d0.jpg') no-repeat center center/cover;
-            color: #000000;
+            color: #fff;
             text-align: center;
             padding-top: 150px;
         }
@@ -63,9 +62,27 @@
         .showcase p {
             font-size: 20px;
         }
+        .image-gallery {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 0;
+        }
+        .image-gallery img {
+            width: 32%;
+            border-radius: 8px;
+        }
         .content {
             padding: 20px;
             background: #fff;
+        }
+        .content h2 {
+            color: #333; /* Schimbă culoarea aici */
+        }
+        .content p {
+            color: #555; /* Schimbă culoarea aici */
+        }
+        .content ul li {
+            color: #777; /* Schimbă culoarea aici */
         }
         footer {
             background: #333;
@@ -98,6 +115,13 @@
             <h1>Welcome to Humble Bundle</h1>
             <p>Pay what you want for great games, books, and more while supporting charity!</p>
         </div>
+    </section>
+
+    <!-- New Image Gallery Section -->
+    <section class="image-gallery container">
+        <img src="https://via.placeholder.com/300" alt="Image 1">
+        <img src="https://via.placeholder.com/300" alt="Image 2">
+        <img src="https://via.placeholder.com/300" alt="Image 3">
     </section>
 
     <section class="content container">
