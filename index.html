@@ -3,35 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Page with Images</title>
+    <title>About Humble Bundle</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77aaff 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        .showcase {
+            min-height: 400px;
+            background: url('https://www.humblebundle.com/static/hashed/7372a9ae2069ad0dcf77bbd7b88b837dff24c2d0.jpg') no-repeat center center/cover;
+            color: #fff;
             text-align: center;
-            margin-top: 50px;
+            padding-top: 150px;
         }
-        h1 {
-            color: #333;
+        .showcase h1 {
+            font-size: 55px;
+            margin-top: 0;
         }
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+        .showcase p {
+            font-size: 20px;
         }
-        .gallery img {
-            margin: 10px;
-            width: 200px;
-            height: auto;
+        .content {
+            padding: 20px;
+            background: #fff;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to My GitHub Page</h1>
-    <p>This is a simple web page hosted with GitHub Pages where you can view images.</p>
-    <div class="gallery">
-        <img src="https://private-user-images.githubusercontent.com/170886535/333905236-20c414b7-b73e-4c8f-955b-7c9ad9622fb7.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTY3NTI0NDMsIm5iZiI6MTcxNjc1MjE0MywicGF0aCI6Ii8xNzA4ODY1MzUvMzMzOTA1MjM2LTIwYzQxNGI3LWI3M2UtNGM4Zi05NTViLTdjOWFkOTYyMmZiNy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNTI2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDUyNlQxOTM1NDNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lZDAyMzBhNjA4OTU4ZDQ1MGM1Njc1ZDJmMGVmYzIxNTU1ZGViMTRjM2UxYWJmMGY5MGYxZmI1MzJlMDgxMGFmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.3GSdXPbf98ATtUKPfyl_rTkaz1HZjxSLqqAcZgxIZFA" alt="humble-bundle-logo">
-        <img src="images/https://github.com/BasarabaG21/BasarabaG21.github.io/assets/170886535/19503d77-5b93-43f5-8764-579279875300" alt="picture2">
-        <img src="images/picture3.jpg" alt="Picture 3">
-    </div>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span style="color: #77aaff;">Humble</span> Bundle</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Bundles</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="showcase">
+        <div class="container">
+            <h1>Welcome to Humble Bundle</h1>
+            <p>Pay what you want for great games, books, and more while supporting charity!</p>
+        </div>
+    </section>
+
+    <section class="content container">
+        <h2>About Humble Bundle</h2>
+        <p>Humble Bundle sells games, books, software, and other digital content. What makes Humble Bundle unique is its "pay what you want" pricing model and the ability to support charity with every purchase.</p>
+        <p>Since its launch in 2010, Humble Bundle has raised millions of dollars for various charities around the world. The bundles are available for a limited time, and new bundles are added regularly. Customers can choose how their payment is divided between the content creators, Humble Bundle, and the selected charities.</p>
+        <h3>Key Features:</h3>
+        <ul>
+            <li>Pay what you want pricing</li>
+            <li>Support for various charities</li>
+            <li>High-quality games, books, and software</li>
+            <li>Regularly updated bundles</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>Humble Bundle &copy; 2024</p>
+    </footer>
 </body>
 </html>
