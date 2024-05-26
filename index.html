@@ -18,12 +18,13 @@
             overflow: hidden;
         }
         header {
-            background: #333;
+            background: url('https://www.humblebundle.com/static/hashed/82f49fb511b134d21f4ad668d0d1cc58cb033b47.jpg') no-repeat center center/cover;
             color: #fff;
             padding-top: 30px;
             min-height: 70px;
             border-bottom: #77aaff 3px solid;
             text-align: center;
+            position: relative; /* Adăugat pentru poziționarea corectă a textului */
         }
         header a {
             color: #fff;
@@ -40,18 +41,19 @@
             padding: 0 20px;
         }
         header #branding {
-            float: none;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
         }
-        header #branding h1 {
-            margin: 0;
-        }
-        header nav {
-            float: none;
+        header #branding img {
+            width: 150px; /* Ajustează dimensiunea logo-ului */
+            height: auto;
         }
         .showcase {
             min-height: 400px;
-            background: url('https://www.humblebundle.com/static/hashed/7372a9ae2069ad0dcf77bbd7b88b837dff24c2d0.jpg') no-repeat center center/cover;
-            color:#000000;
+            background: #00000;
+            color: #333;
             text-align: center;
             padding-top: 150px;
         }
@@ -62,27 +64,18 @@
         .showcase p {
             font-size: 20px;
         }
-        .image-gallery {
-            display: flex;
-            justify-content: space-between;
-            padding: 20px 0;
-        }
-        .image-gallery img {
-            width: 32%;
-            border-radius: 8px;
-        }
         .content {
             padding: 20px;
             background: #fff;
         }
         .content h2 {
-            color: #333; /* Schimbă culoarea aici */
+            color: #333;
         }
         .content p {
-            color: #555; /* Schimbă culoarea aici */
+            color: #555;
         }
         .content ul li {
-            color: #777; /* Schimbă culoarea aici */
+            color: #777;
         }
         footer {
             background: #333;
@@ -97,7 +90,7 @@
     <header>
         <div class="container">
             <div id="branding">
-                <h1><span style="color: #77aaff;">Humble</span> Bundle</h1>
+                <img src="https://www.humblebundle.com/static/hashed/13eac7beab68c4a405c27a95f28da72f6d54568d.png" alt="Humble Bundle Logo">
             </div>
             <nav>
                 <ul>
@@ -115,13 +108,6 @@
             <h1>Welcome to Humble Bundle</h1>
             <p>Pay what you want for great games, books, and more while supporting charity!</p>
         </div>
-    </section>
-
-    <!-- New Image Gallery Section -->
-    <section class="image-gallery container">
-        <img src="https://https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.worldlandtrust.org%2Fget-involved%2Fcorporate-supporters%2Fhumble-bundle%2F&psig=AOvVaw1ZyIpp7WQGbPcozlj-4ejI&ust=1716841339733000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCIiV9sKSrIYDFQAAAAAdAAAAABAE/400" alt="humble-bundel-logo">
-        <img src="https://via.placeholder.com/300" alt="Image 2">
-        <img src="https://via.placeholder.com/300" alt="Image 3">
     </section>
 
     <section class="content container">
