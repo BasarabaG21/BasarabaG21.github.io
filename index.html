@@ -18,13 +18,12 @@
             overflow: hidden;
         }
         header {
-            background-color: #333; /* Schimbă culoarea de fundal */
+            background-color: #333;
             color: #fff;
             padding-top: 30px;
             min-height: 70px;
             border-bottom: #77aaff 3px solid;
             text-align: center;
-            position: relative; /* Adăugat pentru poziționarea corectă a textului */
         }
         header a {
             color: #fff;
@@ -42,8 +41,8 @@
         }
         .showcase {
             min-height: 400px;
-            background-color: #0648bb; /* Schimbă culoarea de fundal */
-            color: #fff; /* Textul va fi alb */
+            background-color: #0648bb;
+            color: #fff;
             text-align: center;
             padding-top: 150px;
         }
@@ -81,23 +80,23 @@
         <div class="container">
             <nav>
                 <ul>
-                    <li><a href="#">Acasă</a></li>
-                    <li><a href="#">Despre</a></li>
-                    <li><a href="#">Pachete</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#acasa">Acasă</a></li>
+                    <li><a href="#despre">Despre</a></li>
+                    <li><a href="#servicii">Servicii</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section class="showcase">
+    <section class="showcase" id="acasa">
         <div class="container">
             <h1>Bun venit la Humble Bundle</h1>
             <p>Plătește cât vrei pentru jocuri grozave, cărți și multe altele, în timp ce susții caritatea!</p>
         </div>
     </section>
 
-    <section class="content container">
+    <section class="content container" id="despre">
         <h2>Despre Humble Bundle</h2>
         <p>Humble Bundle vinde jocuri, cărți, software și alte conținuturi digitale. Ceea ce face Humble Bundle unic este modelul său de preț "plătește cât vrei" și capacitatea de a susține caritatea cu fiecare achiziție.</p>
         <p>De la lansarea sa în 2010, Humble Bundle a strâns milioane de dolari pentru diverse organizații de caritate din întreaga lume. Pachetele sunt disponibile pentru o perioadă limitată de timp, iar noi pachete sunt adăugate în mod regulat. Clienții pot alege cum este împărțită plata lor între creatorii de conținut, Humble Bundle și organizațiile de caritate selectate.</p>
@@ -108,6 +107,20 @@
             <li>Jocuri, cărți și software de înaltă calitate</li>
             <li>Pachete actualizate în mod regulat</li>
         </ul>
+    </section>
+
+    <section class="content container" id="servicii">
+        <h2>Servicii</h2>
+        <ul>
+            <li>Jocuri</li>
+            <li>Cărți electronice</li>
+            <li>Software</li>
+        </ul>
+    </section>
+
+    <section class="content container" id="contact">
+        <h2>Contact</h2>
+        <p>Pentru mai multe informații, vizitați <a href="https://www.humblebundle.com" target="_blank">site-ul Humble Bundle</a>.</p>
     </section>
 
     <footer>
